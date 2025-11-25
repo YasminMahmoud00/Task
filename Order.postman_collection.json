@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "86118d34-915d-4dbb-8ca0-55c3bca355ec",
+		"name": "Order",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42553431",
+		"_collection_link": "https://yasmin-7343.postman.co/workspace/Yasmin-Mahmoud~499094d9-ede7-47c9-9e72-bf3e4b29ed54/collection/42553431-86118d34-915d-4dbb-8ca0-55c3bca355ec?action=share&source=collection_link&creator=42553431"
+	},
+	"item": [
+		{
+			"name": "create_order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Name",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "description",
+						"value": "description: New iPhone for testing",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "price",
+						"value": "1000",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "image",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 6|Ckuar1wKb6EbelUh4QgYVeKX0lrlyfKoa2jaHNgzb7dfedeb",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product_ids\": [1, 2, 3]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/orders",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get My Order",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
